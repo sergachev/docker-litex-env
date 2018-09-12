@@ -33,7 +33,7 @@ RUN apt-get -y update && \
     gpg --verify /usr/local/bin/gosu.asc && \
     rm /usr/local/bin/gosu.asc && \
     chmod +x /usr/local/bin/gosu && \
-    apt-get remove --purge \
+    apt-get remove -y --purge \
         gpg \
         curl && \
     rm -rf /var/lib/apt/lists/*
