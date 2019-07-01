@@ -15,7 +15,7 @@ RUN apt-get -y update && \
         libtool \
         libz-dev \
         libexpat1-dev \
-	libx11-6 \
+        libx11-6 \
         gosu && \
     rm -rf /var/lib/apt/lists/*
 
